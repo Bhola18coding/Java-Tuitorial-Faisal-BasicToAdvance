@@ -2,6 +2,9 @@ package Day_4_EXCEPTION_HANDLING;
 
 
 //D). Custom Exception
+class hey{
+
+}
 //Library class
 class Library {
     //Available Book 3 hain
