@@ -1,11 +1,10 @@
 package Day_5_FUNCTIONAL_PROGRAMMING.Inbuilt;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 
-public class ConsumerDemo {
+public class iv_ConsumerDemo {
    public static void main(String[] args) {
 
        //CONSUMER
