@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 
-public class MethodReferencesDemo {
+public class ii_MethodReferencesDemo {
    public static void main(String[] args) {
 
        /*  Method references  Indicate to this syntax - ::, Aur yeh ek Short hand notation hota hain , Jiske jariye hum method ko refer kr skte hain*/
