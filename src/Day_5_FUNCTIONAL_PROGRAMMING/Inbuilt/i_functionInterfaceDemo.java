@@ -2,7 +2,7 @@ package Day_5_FUNCTIONAL_PROGRAMMING.Inbuilt;
 
 import java.util.function.Function;
 
-public class functionInterfaceDemo {
+public class i_functionInterfaceDemo {
 
      /* FUNCTION INTERFACE - Yeh Hum use krte jab ek Input Pass krna h aur ek Output hi chahiye tab */
     // (I)
