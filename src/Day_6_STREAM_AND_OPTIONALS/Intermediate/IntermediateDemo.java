@@ -81,6 +81,8 @@ public class IntermediateDemo {
 
 
        /* D). DISTINCT:- Remove duplicate Titles */
+       Stream<Book>distinct = books.stream()
+               .distinct();
 
     }
 
