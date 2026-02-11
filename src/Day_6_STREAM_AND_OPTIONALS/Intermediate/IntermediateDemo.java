@@ -34,6 +34,7 @@ public class IntermediateDemo {
 
        /* A) FILTERING: Books Cheaper than $20 */
        System.out.println("== FILTER EXAMPLE ==");
+
        //1st way = shortcut way
       /* Stream<Book> stream1 = books.stream(); // Filter = Book Object ka Stream Banega
        Stream<Book> stream2=stream1.filter(b-> b.price < 20); // yeh jo filter me kr rhe h yeh predicate ka symbol h as we already seen it.(input  -> predicate leta hain. (short-way) iss filter ko humein stream var ke andar hi define krna hoga
@@ -80,9 +81,49 @@ public class IntermediateDemo {
 
 
 
+
+
+
        /* D). DISTINCT:- Remove duplicate Titles */
-       Stream<Book>distinct = books.stream()
-               .distinct();
+       System.out.println("== DISTINCT EXAMPLE ==");
+       Stream<Book>distinctBook = books.stream().distinct(); // saara duplicate ko remove krke distict value dega
+         distinctBook.forEach(System.out::println); // printing the distinct value
+
+
+
+
+
+
+
+
+         /* E). LIMIT :- If we want to Display only the first 3 books*/
+
+       // 1st way
+       System.out.println("== 1st Way LIMIT EXAMPLE ==");
+       Stream<Book> firstThreeBooks = books.stream()
+               .limit(3);
+       firstThreeBooks.forEach(System.out::println);
+
+
+
+       //2nd way
+       System.out.println("== 2nd Way LIMIT EXAMPLE WITH SORTING CHAIN BY PUBLICATION YEAR ==");
+       Stream<Book> firstThreeBookBySortChain = books.stream()
+               .sorted(Comparator.comparingInt(book -> book.publicationYear)) //Yahan sort hoga year wise
+               .limit(3); // yahan sort ke hisab se first 3 book dega output
+       firstThreeBookBySortChain.forEach(System.out::println);
+
+
+
+
+
+
+
+       /*F). SKIP:- Skip the first 2 books */
+       System.out.println("== SKIP:- Display After skipping first 2 Books ==");
+       Stream<Book> afterSkipTwo = books.stream()
+               .skip(2);
+       afterSkipTwo.forEach(System.out::println);
 
     }
 
