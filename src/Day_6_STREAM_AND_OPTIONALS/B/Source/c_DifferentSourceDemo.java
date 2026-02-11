@@ -1,4 +1,4 @@
-package Day_6_STREAM_AND_OPTIONALS;
+package Day_6_STREAM_AND_OPTIONALS.B.Source;
 
 import java.io.IOException;
 import java.nio.file.Files;

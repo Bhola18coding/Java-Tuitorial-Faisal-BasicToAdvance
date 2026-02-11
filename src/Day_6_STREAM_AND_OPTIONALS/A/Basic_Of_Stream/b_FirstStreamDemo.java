@@ -1,14 +1,9 @@
-package Day_6_STREAM_AND_OPTIONALS;
+package Day_6_STREAM_AND_OPTIONALS.A.Basic_Of_Stream;
 
 //Util Packages
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-import static java.util.stream.Collectors.toList;
 
 public class b_FirstStreamDemo {
    public static void main(String[] args) {

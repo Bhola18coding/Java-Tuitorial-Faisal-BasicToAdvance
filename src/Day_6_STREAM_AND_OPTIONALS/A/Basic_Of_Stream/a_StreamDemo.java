@@ -1,4 +1,4 @@
-package Day_6_STREAM_AND_OPTIONALS;
+package Day_6_STREAM_AND_OPTIONALS.A.Basic_Of_Stream;
 
 //Util packages what we are using below
 import java.util.Arrays;
