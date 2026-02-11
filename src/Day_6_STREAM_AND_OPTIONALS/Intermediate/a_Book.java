@@ -1,6 +1,6 @@
 package Day_6_STREAM_AND_OPTIONALS.Intermediate;
 
-public class Book {
+public class a_Book {
     //(i). We have define the variable of this class
     String title;
     int publicationYear;
@@ -9,7 +9,7 @@ public class Book {
 
 
     //(ii). We will now generate the constructors
-    public Book(String title, int publicationYear, double price, String category) {
+    public a_Book(String title, int publicationYear, double price, String category) {
         this.title = title;
         this.publicationYear = publicationYear;
         this.price = price;

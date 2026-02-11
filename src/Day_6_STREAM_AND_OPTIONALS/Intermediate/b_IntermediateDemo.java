@@ -3,27 +3,26 @@ package Day_6_STREAM_AND_OPTIONALS.Intermediate;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
-import java.util.function.Predicate;
 import java.util.stream.Stream;
 
-public class IntermediateDemo {
+public class b_IntermediateDemo {
    public static void main(String[] args) {
 
        /*(iii) List Of Book*/
        //Yeh humne isliye create kiya hain kyuki - Agar hum Object ke saath kaam kr rhe h aur humare paas yeh book class hain, tohhumare pass list ki object kahi se v aa skti hain, maan lijiye hum Database se saari ki saari books fetch kr rhe hain ki kitne books hain humare software me
        // toh humein isi tarah se list milegi lekin data base se, hum agar kisi 3rd part API ko call krke data le skte hain . toh woh v humein list ke form me hi milegi
        // Humare paas avi koi data base toh hain nhi naa hi koi 3rd party API toh humne yahan hard code list hi bana diye hain
-       List<Book> books = Arrays.asList(
-               new Book("The Great Gatsby", 1925, 15.99, "Fiction"),
-               new Book("1984", 1949, 12.50, "Dystopian"),
-               new Book("The Hobbit", 1937, 20.00, "Fantasy"),
-               new Book("A Brief History of Time", 1988, 18.99, "Science"),
-               new Book("The Catcher in the Rye", 1951, 10.99, "Fiction"),
-               new Book("Sapiens", 2011, 22.50, "History"),
-               new Book("Clean Code", 2008, 45.00, "Technology"),
-               new Book("The Alchemist", 1988, 14.25, "Adventure"),
-               new Book("Dune", 1965, 25.99, "Science Fiction"),
-               new Book("Thinking, Fast and Slow", 2011, 21.00, "Psychology")
+       List<a_Book> books = Arrays.asList(
+               new a_Book("The Great Gatsby", 1925, 15.99, "Fiction"),
+               new a_Book("1984", 1949, 12.50, "Dystopian"),
+               new a_Book("The Hobbit", 1937, 20.00, "Fantasy"),
+               new a_Book("A Brief History of Time", 1988, 18.99, "Science"),
+               new a_Book("The Catcher in the Rye", 1951, 10.99, "Fiction"),
+               new a_Book("Sapiens", 2011, 22.50, "History"),
+               new a_Book("Clean Code", 2008, 45.00, "Technology"),
+               new a_Book("The Alchemist", 1988, 14.25, "Adventure"),
+               new a_Book("Dune", 1965, 25.99, "Science Fiction"),
+               new a_Book("Thinking, Fast and Slow", 2011, 21.00, "Psychology")
        );
 
 
@@ -50,7 +49,7 @@ public class IntermediateDemo {
 
 
        // 3rd Way = Chaining method
-          Stream<Book> filteredBook = books.stream()
+          Stream<a_Book> filteredBook = books.stream()
                       . filter(book -> book.price < 20);
                   filteredBook.forEach(System.out::println);
 
@@ -75,7 +74,7 @@ public class IntermediateDemo {
 
         /* C). SORTING :- Books By Publication Data*/
        System.out.println("== SORTING EXAMPLE ==");
-       Stream<Book> sortedBooks = books.stream() // we will first make the books stream in Sorting, Book object ka stream banega
+       Stream<a_Book> sortedBooks = books.stream() // we will first make the books stream in Sorting, Book object ka stream banega
                .sorted(Comparator.comparingInt(book -> book.publicationYear)); // Yahan hum Sorted comparator ka use krenge. yeh publication year ko sort krte rhega year by year
        sortedBooks.forEach(System.out::println); // and fir usko print kr denge
 
@@ -86,7 +85,7 @@ public class IntermediateDemo {
 
        /* D). DISTINCT:- Remove duplicate Titles */
        System.out.println("== DISTINCT EXAMPLE ==");
-       Stream<Book>distinctBook = books.stream().distinct(); // saara duplicate ko remove krke distict value dega
+       Stream<a_Book>distinctBook = books.stream().distinct(); // saara duplicate ko remove krke distict value dega
          distinctBook.forEach(System.out::println); // printing the distinct value
 
 
@@ -100,7 +99,7 @@ public class IntermediateDemo {
 
        // 1st way
        System.out.println("== 1st Way LIMIT EXAMPLE ==");
-       Stream<Book> firstThreeBooks = books.stream()
+       Stream<a_Book> firstThreeBooks = books.stream()
                .limit(3);
        firstThreeBooks.forEach(System.out::println);
 
@@ -108,7 +107,7 @@ public class IntermediateDemo {
 
        //2nd way
        System.out.println("== 2nd Way LIMIT EXAMPLE WITH SORTING CHAIN BY PUBLICATION YEAR ==");
-       Stream<Book> firstThreeBookBySortChain = books.stream()
+       Stream<a_Book> firstThreeBookBySortChain = books.stream()
                .sorted(Comparator.comparingInt(book -> book.publicationYear)) //Yahan sort hoga year wise
                .limit(3); // yahan sort ke hisab se first 3 book dega output
        firstThreeBookBySortChain.forEach(System.out::println);
@@ -121,7 +120,7 @@ public class IntermediateDemo {
 
        /*F). SKIP:- Skip the first 2 books */
        System.out.println("== SKIP:- Display After skipping first 2 Books ==");
-       Stream<Book> afterSkipTwo = books.stream()
+       Stream<a_Book> afterSkipTwo = books.stream()
                .skip(2);
        afterSkipTwo.forEach(System.out::println);
 
