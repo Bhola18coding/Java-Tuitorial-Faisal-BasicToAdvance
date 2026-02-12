@@ -1,4 +1,4 @@
-package Day_6_STREAM_AND_OPTIONALS.C.Intermediate;
+package Day_6_STREAM.C.Intermediate;
 
 public class a_Book {
     //(i). We have define the variable of this class

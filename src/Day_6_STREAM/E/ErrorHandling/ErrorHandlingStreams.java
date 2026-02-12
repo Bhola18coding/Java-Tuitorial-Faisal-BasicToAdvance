@@ -1,4 +1,4 @@
-package Day_6_STREAM_AND_OPTIONALS.E.ErrorHandling;
+package Day_6_STREAM.E.ErrorHandling;
 
 import java.util.List;
 

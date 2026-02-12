@@ -1,9 +1,8 @@
-package Day_6_STREAM_AND_OPTIONALS.D.Terminal;
+package Day_6_STREAM.D.Terminal;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class b_TerminalOperationsDemoChallenge {

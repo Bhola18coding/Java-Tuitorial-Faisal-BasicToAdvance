@@ -1,4 +1,4 @@
-package Day_6_STREAM_AND_OPTIONALS.D.Terminal;
+package Day_6_STREAM.D.Terminal;
 
 public class BookMaker {
     //(i). We have define the variable of this class

@@ -1,4 +1,4 @@
-package Day_6_STREAM_AND_OPTIONALS.C.Intermediate;
+package Day_6_STREAM.C.Intermediate;
 
 import java.util.Arrays;
 import java.util.Comparator;
